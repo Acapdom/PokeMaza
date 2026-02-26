@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reglamento Oficial - PokeMaza Cup</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(180deg, #f3f6fb 0%, #e6ebf5 100%);
+  color: #1a1a1a;
+}
+
+/* ===== CONTENEDOR CENTRAL ===== */
+.wrapper {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(90deg, #e3350d, #1e3a8a);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  margin-top: 15px;
+  opacity: 0.9;
+}
+
+/* ===== SECCIONES ===== */
+.section {
+  background: white;
+  margin: 50px auto;
+  padding: 50px 60px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+  border-top: 6px solid #e3350d;
+  border-bottom: 6px solid #1e3a8a;
+}
+
+.section h2 {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.decor-line {
+  width: 70px;
+  height: 4px;
+  background: #e3350d;
+  margin: 15px auto 35px auto;
+  border-radius: 2px;
+}
+
+.section h3 {
+  margin-top: 30px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+ul {
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+.highlight {
+  background: rgba(227,53,13,0.1);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.warning {
+  background: rgba(30,58,138,0.08);
+  border-left: 4px solid #1e3a8a;
+  padding: 12px 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+}
+
+/* ===== ÍNDICE ===== */
+.index-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 40px;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+.index-grid div {
+  padding: 6px 0;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #111;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px) {
+  .section {
+    padding: 35px 25px;
+  }
+
+  .index-grid {
+    grid-template-columns: 1fr;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== ÍNDICE FUNCIONAL ===== */
+
+.index-grid a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.index-grid a:hover {
+  background: linear-gradient(90deg, #e3350d, #1e3a8a);
+  color: white;
+  transform: translateX(5px);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrapper">
+    <h1>Reglamento Oficial</h1>
+    <p>PokeMaza Cup · Normativa Competitiva</p>
+  </div>
+</section>
+
+<div class="wrapper">
+
+<section class="section" id="indice">
+  <h2>Índice</h2>
+  <div class="decor-line"></div>
+
+  <div class="index-grid">
+    <div><a href="#baneos">1. Baneos y Restricciones</a></div>
+    <div><a href="#nuzlocke">5. Reglas Nuzlocke</a></div>
+    <div><a href="#normas">2. Normas Generales</a></div>
+    <div><a href="#torneo">6. Torneo Competitivo</a></div>
+    <div><a href="#mecanicas">3. Mecánicas y Aclaraciones</a></div>
+    <div><a href="#actualizaciones">7. Actualizaciones</a></div>
+    <div><a href="#niveles">4. Límites de Nivel</a></div>
+  </div>
+</section>
+
+<!-- SECCIÓN 1 -->
+<section class="section" id="baneos">
+  <h2>1. Baneos y Restricciones Técnicas</h2>
+  <div class="decor-line"></div>
+
+  <h3>Pokémon Prohibidos</h3>
+  <ul>
+    <li>Slaking</li>
+    <li>Pokémon Legendarios</li>
+    <li>Pokémon Singulares</li>
+  </ul>
+
+  <h3>Habilidades Prohibidas</h3>
+  <ul>
+    <li>Superguarda</li>
+    <li>Potencia</li>
+    <li>Recogida*</li>
+  </ul>
+
+  <div class="warning">
+    Recogida solo permitida si el Pokémon no puede depositarse en la caja.
+  </div>
+
+  <h3>Prohibiciones Generales</h3>
+  <ul>
+    <li>Movimientos de K.O. directo</li>
+    <li>Movimientos que roben objetos permanentemente</li>
+    <li>Uso de exploits o mecánicas injustas</li>
+    <li>Tutores de movimientos prohibidos</li>
+  </ul>
+</section>
+
+<!-- SECCIÓN 2 -->
+<section class="section" id="normas">
+  <h2>2. Normas Generales de la Partida</h2>
+  <div class="decor-line"></div>
+
+  <p>Se permite el uso de <span class="highlight">Caramelos Raros</span> como mejora de calidad de vida.</p>
+
+  <div class="warning">
+    El nivel máximo permitido será el del Pokémon más fuerte del siguiente líder.
+  </div>
+
+  <ul>
+    <li>Todos los Pokémon deben llevar mote.</li>
+    <li>Prohibida la crianza.</li>
+    <li>No se permiten Pokémon no randomizados.</li>
+    <li>Solo se pueden comprar Poké Balls, Repelentes y objetos evolutivos.</li>
+    <li>Prohibido comprar pociones o revivir.</li>
+  </ul>
+</section>
+
+<!-- SECCIÓN 3 -->
+<section class="section" id="mecanicas">
+  <h2>3. Mecánicas y Aclaraciones</h2>
+  <div class="decor-line"></div>
+
+  <p>Movimientos y estadísticas actualizados a <span class="highlight">Generación 9</span>.</p>
+
+  <ul>
+    <li>Tipo Hada activo.</li>
+    <li>Cambios en potencia y efectos de ataques.</li>
+    <li>Revisar MT y Recordador antes de cerrar equipos.</li>
+  </ul>
+</section>
+
+<!-- SECCIÓN 4 -->
+<section class="section" id="niveles">
+  <h2>4. Límites de Nivel por Gimnasio</h2>
+  <div class="decor-line"></div>
+
+  <ul>
+    <li>Gimnasio 1 → Nivel máximo: XX</li>
+    <li>Gimnasio 2 → Nivel máximo: XX</li>
+    <li>Gimnasio 3 → Nivel máximo: XX</li>
+    <li>Alto Mando → Nivel máximo: XX</li>
+  </ul>
+</section>
+
+<!-- SECCIÓN 5 -->
+<section class="section" id="nuzlocke">
+  <h2>5. Reglas Nuzlocke</h2>
+  <div class="decor-line"></div>
+
+  <ul>
+    <li>Solo el primer encuentro por ruta.</li>
+    <li>Cláusula de duplicados activa.</li>
+    <li>Pokémon debilitado = Muerto.</li>
+    <li>Máximo 3 Shinies por partida.</li>
+    <li>Prohibido manipular guardados.</li>
+  </ul>
+</section>
+
+<!-- SECCIÓN 6 -->
+<section class="section" id="torneo">
+  <h2>6. Reglamento del Torneo Competitivo</h2>
+  <div class="decor-line"></div>
+
+  <ul>
+    <li>Nivel 75</li>
+    <li>IVs fijos en 16</li>
+    <li>EVs libres</li>
+    <li>Equipo de 6 sin cambios</li>
+    <li>No repetir objetos</li>
+  </ul>
+</section>
+
+<!-- SECCIÓN 7 -->
+<section class="section" id="actualizaciones">
+  <h2>7. Actualizaciones Oficiales</h2>
+  <div class="decor-line"></div>
+
+  <p>Revisar siempre la última página donde se indicarán modificaciones, fecha y sección afectada.</p>
+</section>
+
+</div>
+
+<footer class="footer">
+  PokeMaza Cup · Reglamento Oficial · Puede actualizarse durante la competición
+</footer>
+
+</body>
+</html>
