@@ -1,0 +1,56 @@
+/* HERO EDICIÓN */
+
+.hero-edicion {
+  position: relative;
+  height: 50vh;
+  background-image: url("../recursos/hero-edicion.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.hero-edicion .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-edicion h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+/* RESULTADOS */
+
+.resultados-section {
+  background-color: #ffffff;
+}
+
+.tabla-resultados thead {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.equipo-img {
+  max-width: 150px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.equipo-img:hover {
+  transform: scale(1.1);
+}
+
+/* Podio colores */
+
+.oro-fila {
+  background-color: rgba(212, 175, 55, 0.15);
+}
+
+.plata-fila {
+  background-color: rgba(156, 163, 175, 0.15);
+}
+
+.bronce-fila {
+  background-color: rgba(180, 83, 9, 0.15);
+}
