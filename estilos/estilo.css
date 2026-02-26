@@ -1,0 +1,305 @@
+ :root {
+   --pk-red: #ff1c1c;
+   /* Rojo Pokéball */
+   --pk-white: #ffffff;
+   --pk-blue: #3b4cca;
+   /* Azul logo Pokémon */
+   --pk-yellow: #ffde00;
+   /* Amarillo logo */
+   --pk-bg: #f0f0f0;
+   /* Gris claro de fondo de interfaz */
+   --pk-border: #333333;
+ }
+
+ body {
+   font-family: 'Montserrat', sans-serif;
+   background-color: var(--pk-bg);
+   color: #333;
+ }
+
+ /* BARRA DE NAVEGACIÓN ESTILO POKÉDEX */
+ .navbar {
+   background-color: var(--pk-red) !important;
+   border-bottom: 6px solid var(--pk-border);
+   padding: 15px 0;
+ }
+
+ .navbar-brand {
+   font-weight: 900;
+   color: var(--pk-white) !important;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+ }
+
+ .nav-link {
+   color: var(--pk-white) !important;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-left: 15px;
+ }
+
+ .nav-link:hover {
+   color: var(--pk-yellow) !important;
+ }
+
+ /* HERO CON ESTILO DE ENTRADA AL JUEGO */
+ .hero-pokemon {
+   background: white;
+   padding: 60px 0;
+   border-bottom: 8px solid var(--pk-blue);
+   position: relative;
+ }
+
+ .hero-pokemon h1 {
+   font-weight: 900;
+   color: var(--pk-red);
+   -webkit-text-stroke: 1px var(--pk-border);
+   font-size: 3.5rem;
+ }
+
+ /* SECCIÓN ÉPICA ESTILO CAJA DE TEXTO POKÉMON */
+ .text-box-section {
+   background-color: #78c850;
+   /* Verde Ruta */
+   padding: 80px 0;
+   border-bottom: 6px solid var(--pk-border);
+ }
+
+ .poke-text-container {
+   background: white;
+   border: 4px solid var(--pk-border);
+   border-radius: 20px;
+   padding: 40px;
+   box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.1);
+   position: relative;
+ }
+
+ /* Contenedor padre debe ser relativo */
+ .poke-text-container {
+   position: relative;
+   overflow: visible;
+   /* Para permitir que la imagen sobresalga un poco si quieres */
+   padding-right: 120px;
+   /* Espacio extra para que el texto no pise la imagen */
+ }
+
+ /* Estilo base de la imagen */
+ .profesor-img {
+   position: absolute;
+   bottom: -10px;
+   right: 10px;
+   width: 150px;
+   height: auto;
+   z-index: 10;
+   pointer-events: none;
+
+   /* TRANSICIÓN: Esto hace que el movimiento sea fluido y no de golpe */
+   transition: transform 0.4s ease-in-out;
+ }
+
+ /* Contenedor principal del mensaje */
+ .poke-text-container {
+   padding: 40px 120px;
+   /* Añadimos espacio a los lados para los profesores */
+   position: relative;
+   background: white;
+   border: 4px solid var(--pk-border);
+   border-radius: 15px;
+ }
+
+ /* Imagen inferior derecha */
+ .profesor-img {
+   position: absolute;
+   bottom: -10px;
+   right: 10px;
+   width: 140px;
+   height: auto;
+   transition: transform 0.4s ease-in-out;
+   z-index: 5;
+ }
+
+ /* Imagen superior izquierda (la nueva) */
+ .profesor-img-top-left {
+   position: absolute;
+   top: -20px;
+   left: -20px;
+   width: 140px;
+   height: auto;
+   transition: transform 0.4s ease-in-out;
+   z-index: 5;
+ }
+
+ /* ANIMACIÓN AL PASAR EL RATÓN (HOVER) */
+ .poke-text-container:hover .profesor-img {
+   transform: translateY(-15px);
+   /* Sube */
+ }
+
+ .poke-text-container:hover .profesor-img-top-left {
+   transform: translateY(15px);
+   /* Baja */
+ }
+
+ /* Ajuste para móviles */
+ @media (max-width: 768px) {
+   .poke-text-container {
+     padding: 40px 20px;
+   }
+
+   .profesor-img,
+   .profesor-img-top-left {
+     width: 80px;
+     /* Más pequeños en móvil */
+   }
+ }
+
+ /* EFECTO HOVER: Cuando el ratón pasa por encima del CONTENEDOR */
+ .poke-text-container:hover .profesor-img {
+   /* Mueve la imagen 15 píxeles hacia arriba */
+   transform: translateY(-15px);
+ }
+
+ /* Ajuste para pantallas pequeñas (móviles) */
+ @media (max-width: 768px) {
+   .poke-text-container {
+     padding-right: 20px;
+     /* Quitamos el espacio extra */
+     padding-bottom: 80px;
+     /* Añadimos espacio abajo */
+   }
+
+   .profesor-img {
+     width: 100px;
+     /* Más pequeño en móvil */
+     bottom: 5px;
+   }
+ }
+
+ /* El triángulo clásico de la caja de texto */
+ .poke-text-container::after {
+   content: "▼";
+   position: absolute;
+   bottom: 10px;
+   right: 25px;
+   color: var(--pk-blue);
+   animation: bounce 1s infinite;
+ }
+
+ /* REGLAS ESTILO "OPCIONES DE MENÚ" */
+ .rule-item {
+   background: white;
+   border: 3px solid var(--pk-border);
+   border-radius: 15px;
+   padding: 25px;
+   height: 100%;
+   transition: 0.2s;
+ }
+
+ .rule-item:hover {
+   background: #eef5ff;
+   transform: translateY(-5px);
+ }
+
+ .rule-title {
+   color: var(--pk-blue);
+   font-weight: 900;
+   font-size: 1.2rem;
+   margin-bottom: 15px;
+   display: block;
+ }
+
+ /* HALL DE LA FAMA - ESTILO TARJETA DE ENTRENADOR */
+ #ganadores {
+   background-color: var(--pk-blue);
+   padding: 80px 0;
+ }
+
+ .winner-card {
+   background: #e8e8e8;
+   border: 4px solid var(--pk-border);
+   border-radius: 10px;
+   padding: 10px;
+ }
+
+ .card-header-pk {
+   background: var(--pk-red);
+   color: white;
+   padding: 10px;
+   font-weight: 900;
+   border-bottom: 4px solid var(--pk-border);
+   margin: -10px -10px 15px -10px;
+   border-radius: 5px 5px 0 0;
+ }
+
+ .ganador-img {
+   border: 3px solid var(--pk-border);
+   background: white;
+   padding: 5px;
+   cursor: pointer;
+ }
+
+ /* FOOTER */
+ footer {
+   background: #333;
+   color: white;
+   padding: 30px 0;
+ }
+
+ @keyframes bounce {
+
+   0%,
+   100% {
+     transform: translateY(0);
+   }
+
+   50% {
+     transform: translateY(5px);
+   }
+ }
+
+ .badge-pk {
+   background: var(--pk-yellow);
+   color: var(--pk-blue);
+   padding: 5px 15px;
+   border-radius: 20px;
+   border: 2px solid var(--pk-border);
+   font-weight: 800;
+   display: inline-block;
+ }
+
+ .btn-pk-main {
+   display: inline-block;
+   background-color: var(--pk-white);
+   color: var(--pk-blue);
+   font-weight: 900;
+   text-transform: uppercase;
+   text-decoration: none;
+   padding: 15px 30px;
+   border: 4px solid var(--pk-border);
+   border-radius: 12px;
+   box-shadow: 6px 6px 0px var(--pk-border);
+   transition: all 0.1s ease;
+   font-size: 1.1rem;
+   position: relative;
+ }
+
+ .btn-pk-main:hover {
+   background-color: var(--pk-yellow);
+   color: var(--pk-blue);
+   transform: translate(2px, 2px);
+   box-shadow: 4px 4px 0px var(--pk-border);
+ }
+
+ .btn-pk-main:active {
+   transform: translate(6px, 6px);
+   box-shadow: 0px 0px 0px var(--pk-border);
+ }
+
+ .btn-icon {
+   margin-right: 10px;
+ }
+
+ .btn-arrow {
+   margin-left: 15px;
+   font-size: 0.9rem;
+ }
