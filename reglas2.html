@@ -3,207 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reglamento Oficial - PokeMaza Cup</title>
+    <title>Reglamento Oficial - PokeMaza Cup IV</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="estilos/estiloReglas.css">
-   
+    <link rel="stylesheet" href="estilos/estiloReglas.css">
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
     <a class="navbar-brand fw-900" href="index.html">MAZAGON CUP</a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="menuPrincipal">
       <ul class="navbar-nav ms-auto text-center">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Aventura</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="reglas2.html">Reglas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="entrenadores.html">Entrenadores</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Aventura</a></li>
+        <li class="nav-item"><a class="nav-link active" href="reglas2.html">Reglas</a></li>
+        <li class="nav-item"><a class="nav-link" href="entrenadores.html">Entrenadores</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<header class="hero-competitivo">
-    <div class="badge-pk">TEMPORADA 2026</div>
-    <h1 class="titulo-oficial">REGLAMENTO OFICIAL</h1>
-    <p class="fw-bold text-muted">Consulta las normas y límites de nivel</p>
+<header class="hero-pokemon text-center d-flex align-items-center justify-content-center" 
+        style="background-image: url('recursos/9c3b447bc23141425bb3176b5986cde4.jpg'); background-size: cover; background-position: center; min-height: 400px; width: 100%;">
+  <div class="container">
+    <span class="badge-pk mb-3">SOULSILVER</span>
+    <h1 class="display-4 fw-bold text-red">MAZAGON POKÉMON CUP IV</h1>
+    <p class="lead fw-bold mt-2 text-white">REGLAMENTO Y NORMATIVA OFICIAL</p>
+  </div>
 </header>
 
 <div class="main-wrapper">
     <aside class="sidebar">
         <h3>ÍNDICE</h3>
-        <a href="#baneos">Baneos</a>
-        <a href="#normas">Normas Base</a>
-        <a href="#mecanicas">Mecánicas</a>
-        <a href="#niveles">Niveles HGSS</a>
-        <a href="#nuzlocke">Reglas nuzlocke</a>
-        <a href="#torneo">Reglamento torneo</a>
-         <a href="#actualizaciones">Actualizaciones</a>
+        <a href="#nuzlocke">1. Reglas Nuzlocke</a>
+        <a href="#baneos">2. Baneos Técnicos</a>
+        <a href="#normas">3. Normas Partida</a>
+        <a href="#niveles">4. Límites de Nivel</a>
+        <a href="#torneo">5. Reglas Torneo</a>
+        <a href="#actualizaciones">6. Actualizaciones</a>
     </aside>
 
     <main class="content">
-        <!-- SECCIÓN 1 -->
-<section class="section" id="baneos">
-  <h2>1. Baneos y Restricciones Técnicas</h2>
-  <div class="decor-line"></div>
+        <section class="section" id="nuzlocke">
+            <h2>1. Reglas Nuzlocke (Resumen)</h2>
+            <div class="decor-line"></div>
+            <p>El reto comienza oficialmente al obtener las <span class="highlight">Poké Balls</span>.</p>
+            <ul>
+                <li><strong>Primer encuentro:</strong> Solo puedes capturar el primer Pokémon de cada ruta.</li>
+                <li><strong>Dupes Clause:</strong> Si ya tienes ese Pokémon o su línea evolutiva, puedes buscar otro. <em>(Ej: Si tienes a Eevee, no puedes capturar a Jolteon, pero si tienes a Jolteon sí puedes capturar a Eevee).</em></li>
+                <li><strong>Muerte:</strong> Pokémon debilitado = Muerto. Va directo a la caja "Cementerio".</li>
+                <li><strong>Especiales:</strong> Pokémon estáticos, de intercambio o regalados no cuentan como encuentro de ruta.</li>
+                <li><strong>Shinies:</strong> Máximo 3 por partida. No cuentan como encuentro si ya los tienes.</li>
+            </ul>
+        </section>
 
-  <h3>Pokémon Prohibidos</h3>
-  <ul>
-    <li>Slaking</li>
-    <li>Pokémon Legendarios</li>
-    <li>Pokémon Singulares</li>
-  </ul>
+        <section class="section" id="baneos">
+            <h2>2. Baneos y Restricciones Técnicas</h2>
+            <div class="decor-line"></div>
+            <h3>Pokémon Prohibidos</h3>
+            <ul>
+                <li>Slaking</li>
+                <li>Pokémon Legendarios y Singulares</li>
+            </ul>
+            <h3>Habilidades Prohibidas</h3>
+            <ul>
+                <li>Superguarda y Potencia.</li>
+                <li><strong>Recogida:</strong> Solo si no hay opción de dejar al Pokémon en la caja (debe llevar objeto equipado para anularla).</li>
+            </ul>
+            <div class="warning">
+                Prohibidos movimientos de K.O. Fulminante y robo permanente de objetos.
+            </div>
+        </section>
 
-  <h3>Habilidades Prohibidas</h3>
-  <ul>
-    <li>Superguarda</li>
-    <li>Potencia</li>
-    <li>Recogida*</li>
-  </ul>
+        <section class="section" id="normas">
+            <h2>3. Normas Generales de la Partida</h2>
+            <div class="decor-line"></div>
+            <p>Uso de <span class="highlight">Caramelos Raros</span> permitido para mejorar la calidad de vida, respetando siempre el nivel del líder.</p>
+            <ul>
+                <li><strong>Motes:</strong> Obligatorios en todos los Pokémon.</li>
+                <li><strong>Crianza:</strong> Terminantemente prohibida.</li>
+                <li><strong>Tienda:</strong> Solo permitida para Poké Balls, Repelentes y objetos evolutivos.</li>
+                <li><strong>Curación:</strong> Solo en Centros Pokémon o bayas/objetos hallados. Prohibido comprar pociones o revivir.</li>
+                <li><strong>Zonas Restringidas:</strong> El acceso al Concurso de Captura de Bichos, Zona Safari y el tío de los bonguris están restringidos hasta que se aclaren sus reglas.</li>
+            </ul>
+        </section>
 
-  <div class="warning">
-    Recogida solo permitida si el Pokémon no puede depositarse en la caja.
-  </div>
+        <section class="section" id="niveles">
+            <h2>4. Límites de Nivel (HG/SS)</h2>
+            <div class="decor-line"></div>
+            <div class="tables-container">
+                <div class="table-wrapper">
+                    <h4 class="region-title" style="background:var(--pk-red);">JOHTO</h4>
+                    <div class="table-responsive-scroll">
+                        <table class="table-pokemon">
+                            <thead><tr><th>Líder</th><th>Nivel</th></tr></thead>
+                            <tbody>
+                                <tr><td>Pegaso</td><td><span class="lvl-badge">13</span></td></tr>
+                                <tr><td>Antón</td><td><span class="lvl-badge">17</span></td></tr>
+                                <tr><td>Blanca</td><td><span class="lvl-badge">19</span></td></tr>
+                                <tr><td>Morti</td><td><span class="lvl-badge">25</span></td></tr>
+                                <tr><td>Aníbal</td><td><span class="lvl-badge">31</span></td></tr>
+                                <tr><td>Fredo</td><td><span class="lvl-badge">35</span></td></tr>
+                                <tr><td>Yasmina</td><td><span class="lvl-badge">35</span></td></tr>
+                                <tr><td>Débora</td><td><span class="lvl-badge">41</span></td></tr>
+                                <tr style="background:#fff3f3"><td><b>ALTO MANDO</b></td><td><span class="lvl-badge-pro">50</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <h4 class="region-title" style="background:var(--pk-blue);">KANTO</h4>
+                    <p class="p-4 text-center"><em>La tabla de niveles de Kanto se facilitará más adelante.</em></p>
+                </div>
+            </div>
+        </section>
 
-  <h3>Prohibiciones Generales</h3>
-  <ul>
-    <li>Movimientos de K.O. directo</li>
-    <li>Movimientos que roben objetos permanentemente</li>
-    <li>Uso de exploits o mecánicas injustas</li>
-    <li>Tutores de movimientos prohibidos</li>
-  </ul>
-</section>
+        <section class="section" id="torneo">
+            <h2>5. Reglamento Torneo Competitivo</h2>
+            <div class="decor-line"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="fw-bold">Formato Gen 9 (Showdown)</h5>
+                    <ul>
+                        <li>Nivel: <strong>75</strong></li>
+                        <li>IVs: <strong>16</strong> (fijos) / EVs: Libres</li>
+                        <li>Modalidad: <strong>Al mejor de 3</strong></li>
+                        <li><strong>Baneo:</strong> Presentas 6, rival banea 1, eliges 4.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="fw-bold">Restricciones de Combate</h5>
+                    <ul>
+                        <li>Prohibido bajar precisión o subir evasión.</li>
+                        <li>Máximo <strong>1 movimiento de protección</strong> por Pokémon.</li>
+                        <li>Sleep Clause: No dormir a más de uno a la vez.</li>
+                        <li>No se pueden repetir objetos en el equipo.
+</li>
+                        <li>Prohibido llevar movimientos MO (Surf, Cascada...).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-<!-- SECCIÓN 2 -->
-<section class="section" id="normas">
-  <h2>2. Normas Generales de la Partida</h2>
-  <div class="decor-line"></div>
-
-  <p>Se permite el uso de <span class="highlight">Caramelos Raros</span> como mejora de calidad de vida.</p>
-
-  <div class="warning">
-    El nivel máximo permitido será el del Pokémon más fuerte del siguiente líder.
-  </div>
-
-  <ul>
-    <li>Todos los Pokémon deben llevar mote.</li>
-    <li>Prohibida la crianza.</li>
-    <li>No se permiten Pokémon no randomizados.</li>
-    <li>Solo se pueden comprar Poké Balls, Repelentes y objetos evolutivos.</li>
-    <li>Prohibido comprar pociones o revivir.</li>
-  </ul>
-</section>
-
-<!-- SECCIÓN 3 -->
-<section class="section" id="mecanicas">
-  <h2>3. Mecánicas y Aclaraciones</h2>
-  <div class="decor-line"></div>
-
-  <p>Movimientos y estadísticas actualizados a <span class="highlight">Generación 9</span>.</p>
-
-  <ul>
-    <li>Tipo Hada activo.</li>
-    <li>Cambios en potencia y efectos de ataques.</li>
-    <li>Revisar MT y Recordador antes de cerrar equipos.</li>
-  </ul>
-</section>
-
-<section class="section" id="niveles">
-    <h2>4. LÍMITES DE NIVEL (HG/SS)</h2>
-    <div class="decor-line"></div>
-    
-    <div class="tables-container">
-        
-        <div class="table-wrapper">
-            <h4 class="region-title" style="background:var(--pk-red)">JOHTO</h4>
-            <table class="table-pokemon">
-                <thead><tr><th>Líder</th><th>Nivel</th></tr></thead>
-                <tbody>
-                    <tr><td>Pegaso</td><td><span class="lvl-badge">13</span></td></tr>
-                    <tr><td>Antón</td><td><span class="lvl-badge">17</span></td></tr>
-                    <tr><td>Blanca</td><td><span class="lvl-badge">19</span></td></tr>
-                    <tr><td>Morti</td><td><span class="lvl-badge">25</span></td></tr>
-                    <tr><td>Aníbal</td><td><span class="lvl-badge">31</span></td></tr>
-                    <tr><td>Yasmina</td><td><span class="lvl-badge">35</span></td></tr>
-                    <tr><td>Fredo</td><td><span class="lvl-badge">34</span></td></tr>
-                    <tr><td>Débora</td><td><span class="lvl-badge">41</span></td></tr>
-                    <tr style="background:#fff3f3"><td><b>LIGA</b></td><td><span class="lvl-badge-pro">50</span></td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="table-wrapper">
-            <h4 class="region-title" style="background:var(--pk-blue)">KANTO</h4>
-            <table class="table-pokemon">
-                <thead><tr><th>Líder</th><th>Nivel</th></tr></thead>
-                <tbody>
-                    <tr><td>Lt. Surge</td><td><span class="lvl-badge">53</span></td></tr>
-                    <tr><td>Sabrina</td><td><span class="lvl-badge">55</span></td></tr>
-                    <tr><td>Erika</td><td><span class="lvl-badge">56</span></td></tr>
-                    <tr><td>Sacha</td><td><span class="lvl-badge">50</span></td></tr>
-                    <tr><td>Misty</td><td><span class="lvl-badge">54</span></td></tr>
-                    <tr><td>Brock</td><td><span class="lvl-badge">54</span></td></tr>
-                    <tr><td>Blaine</td><td><span class="lvl-badge">59</span></td></tr>
-                    <tr><td>Azul</td><td><span class="lvl-badge">60</span></td></tr>
-                    <tr style="background:#f0f8ff"><td><b>ROJO</b></td><td><span class="lvl-badge-pro" style="background:black">88</span></td></tr>
-                </tbody>
-            </table>
-        </div>
-        
-    </div>
-</section>
-
-<!-- SECCIÓN 5 -->
-<section class="section" id="nuzlocke">
-  <h2>5. Reglas Nuzlocke</h2>
-  <div class="decor-line"></div>
-
-  <ul>
-    <li>Solo el primer encuentro por ruta.</li>
-    <li>Cláusula de duplicados activa.</li>
-    <li>Pokémon debilitado = Muerto.</li>
-    <li>Máximo 3 Shinies por partida.</li>
-    <li>Prohibido manipular guardados.</li>
-  </ul>
-</section>
-
-<!-- SECCIÓN 6 -->
-<section class="section" id="torneo">
-  <h2>6. Reglamento del Torneo Competitivo</h2>
-  <div class="decor-line"></div>
-
-  <ul>
-    <li>Nivel 75</li>
-    <li>IVs fijos en 16</li>
-    <li>EVs libres</li>
-    <li>Equipo de 6 sin cambios</li>
-    <li>No repetir objetos</li>
-  </ul>
-</section>
-
-<!-- SECCIÓN 7 -->
-<section class="section" id="actualizaciones">
-  <h2>7. Actualizaciones Oficiales</h2>
-  <div class="decor-line"></div>
-
-  <p>Revisar siempre la última página donde se indicarán modificaciones, fecha y sección afectada.</p>
-</section>
+        <section class="section" id="actualizaciones">
+            <h2>6. Actualizaciones</h2>
+            <div class="decor-line"></div>
+            <div class="warning">
+                Las normas son dinámicas para corregir fallos o vacíos legales detectados durante la aventura. Preguntad al staff antes de actuar si algo no está claro.
+            </div>
+            <div class="warning"><a href="https://docs.google.com/document/d/1aK2P9l1OJLFULihzM2Hl8fHHRmFZxBmc/edit?usp=sharing&ouid=116127966827005075398&rtpof=true&sd=true" target="_blank">Ver el documento completo</a>          </div>
+        </section>
     </main>
 </div>
 
 <footer>
-    <p class="fw-bold mb-0">PokeMaza Cup © 2026 - El camino del Campeón</p>
+    <p class="fw-bold mb-0">PokeMaza Cup IV © 2026 - Leed bien antes de preguntar.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

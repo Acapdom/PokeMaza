@@ -38,21 +38,35 @@
      font-weight: 700;
  }
 
- /* ===== HERO HEADER (ESTILO ENTRADA) ===== */
- .hero-competitivo {
-     background: var(--pk-white);
-     color: var(--pk-red);
-     text-align: center;
-     padding: 60px 20px;
-     height: 50vh;
-     background-image: url("../recursos/wp11370594-surfing-pikachu-wallpapers.jpg");
-     /* ← pon aquí tu imagen */
-     background-size: cover;
-     background-position: left;
-     background-repeat: no-repeat;
-     border-bottom: 8px solid var(--pk-blue);
-     margin-bottom: 20px;
+ /* HERO CON ESTILO DE ENTRADA AL JUEGO */
+ .hero-pokemon {
+   background: white;
+   padding: 60px 0;
+   height: 75vh;
+   background-image: url("../recursos/wp11370594-surfing-pikachu-wallpapers.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-bottom: 8px solid var(--pk-blue);
+   position: relative;
  }
+
+ .hero-pokemon {
+   position: relative;
+   display: flex;
+   align-items: center;
+   /* Centrado vertical */
+   justify-content: center;
+   /* Centrado horizontal */
+   min-height: 60vh;
+   /* Ocupa el 60% de la altura de la pantalla */
+   color: white;
+   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+   /* Sombra para que se lea bien sobre la imagen */
+   margin-top: 0;
+   /* Elimina posibles huecos arriba */
+ }
+
 
  /* Capa oscura para que el texto se lea bien */
  .hero-competitivo .overlay {
@@ -183,50 +197,59 @@
      border-radius: 3px;
  }
 
- /* ===== TABLAS ESTILO INTERFAZ ===== */
- /* Contenedor de las tablas */
- .tables-container {
-     display: flex;
-     flex-wrap: wrap;
-     /* Permite que las tablas bajen si no hay espacio */
-     gap: 20px;
-     /* Espacio entre las dos tablas */
-     justify-content: center;
-     align-items: flex-start;
- }
+/* ===== TABLAS ESTILO INTERFAZ ===== */
+/* Contenedor de las tablas */
+.tables-container {
+    display: flex;
+    flex-direction: row; /* Fuerza una al lado de la otra en escritorio */
+    flex-wrap: nowrap;   /* Evita que bajen en pantallas grandes */
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
 
- /* Cada envoltorio de tabla */
- .table-wrapper {
-     flex: 1;
-     /* Intentan ocupar el mismo espacio */
-     min-width: 300px;
-     /* Cuando el espacio sea menor a 300px (móvil), se apilan */
-     max-width: 100%;
-     /* Para que no se salgan de la pantalla */
-     background: white;
-     border-radius: 8px;
-     overflow: hidden;
-     /* Para que los bordes redondeados funcionen con el título */
-     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
- }
+/* Cada envoltorio de tabla */
+.table-wrapper {
+    flex: 1;            /* Hace que ambas crezcan por igual */
+    min-width: 0;       /* IMPORTANTE: permite que la tabla se encoja menos de su contenido */
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
 
- /* Ajustes específicos para móviles */
- @media (max-width: 768px) {
-     .tables-container {
-         flex-direction: column;
-         /* Fuerza a que estén una debajo de otra */
-     }
+/* Estilo de la tabla para que no rompa el layout */
+.table-pokemon {
+    width: 100%;
+    table-layout: auto; /* Permite que las columnas se ajusten al texto */
+    border-collapse: collapse;
+}
 
-     .table-wrapper {
-         width: 100%;
-         /* Ocupa todo el ancho disponible */
-     }
+/* ===== MODO MÓVIL (Ajuste total) ===== */
+@media (max-width: 768px) {
+    .tables-container {
+        flex-direction: column; /* Una debajo de otra solo en móvil */
+        flex-wrap: wrap;
+        padding: 10px;
+    }
 
-     .table-pokemon {
-         font-size: 0.9rem;
-         /* Un pelín más pequeña la letra en móvil */
-     }
- }
+    .table-wrapper {
+        width: 100%;       /* Ocupa el ancho total del móvil */
+        max-width: 100%;
+        margin-bottom: 20px;
+        overflow-x: auto;  /* Si el contenido es muy ancho, permite scroll interno */
+    }
+
+    .table-pokemon {
+        font-size: 0.85rem; /* Letra un pelín más pequeña para ahorrar espacio */
+    }
+}
 
  .region-title {
      background: var(--pk-border);
