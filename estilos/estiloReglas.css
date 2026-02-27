@@ -37,6 +37,21 @@
      color: var(--pk-white) !important;
      font-weight: 700;
  }
+ @media (max-width: 991px) {
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+        border: 2px solid var(--pk-red);
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+        padding: 15px 0 !important;
+        border-bottom: 1px solid #333;
+    }
+}
 
  /* HERO CON ESTILO DE ENTRADA AL JUEGO */
  .hero-pokemon {
